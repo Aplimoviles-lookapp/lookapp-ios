@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E772DEAB04C00FBD99C /* lookappApp.swift */; };
+		3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E792DEAB04C00FBD99C /* ContentView.swift */; };
+		3CA88E7C2DEAB05700FBD99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA88E7B2DEAB05700FBD99C /* Assets.xcassets */; };
+		3CA88E7F2DEAB05700FBD99C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA88E7E2DEAB05700FBD99C /* Preview Assets.xcassets */; };
+		3CA88E892DEAB05700FBD99C /* lookappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E882DEAB05700FBD99C /* lookappTests.swift */; };
+		3CA88E932DEAB05700FBD99C /* lookappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E922DEAB05700FBD99C /* lookappUITests.swift */; };
+		3CA88E952DEAB05700FBD99C /* lookappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E942DEAB05700FBD99C /* lookappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CA88E852DEAB05700FBD99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA88E6C2DEAB04C00FBD99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA88E732DEAB04C00FBD99C;
+			remoteInfo = lookapp;
+		};
+		3CA88E8F2DEAB05700FBD99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA88E6C2DEAB04C00FBD99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA88E732DEAB04C00FBD99C;
+			remoteInfo = lookapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CA88E742DEAB04C00FBD99C /* lookapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA88E772DEAB04C00FBD99C /* lookappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappApp.swift; sourceTree = "<group>"; };
+		3CA88E792DEAB04C00FBD99C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CA88E7B2DEAB05700FBD99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CA88E7E2DEAB05700FBD99C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CA88E842DEAB05700FBD99C /* lookappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA88E882DEAB05700FBD99C /* lookappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappTests.swift; sourceTree = "<group>"; };
+		3CA88E8E2DEAB05700FBD99C /* lookappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA88E922DEAB05700FBD99C /* lookappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappUITests.swift; sourceTree = "<group>"; };
+		3CA88E942DEAB05700FBD99C /* lookappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CA88E712DEAB04C00FBD99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E812DEAB05700FBD99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E8B2DEAB05700FBD99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CA88E6B2DEAB04C00FBD99C = {
+			isa = PBXGroup;
+			children = (
+				3CA88E762DEAB04C00FBD99C /* lookapp */,
+				3CA88E872DEAB05700FBD99C /* lookappTests */,
+				3CA88E912DEAB05700FBD99C /* lookappUITests */,
+				3CA88E752DEAB04C00FBD99C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CA88E752DEAB04C00FBD99C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CA88E742DEAB04C00FBD99C /* lookapp.app */,
+				3CA88E842DEAB05700FBD99C /* lookappTests.xctest */,
+				3CA88E8E2DEAB05700FBD99C /* lookappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CA88E762DEAB04C00FBD99C /* lookapp */ = {
+			isa = PBXGroup;
+			children = (
+				3CA88E772DEAB04C00FBD99C /* lookappApp.swift */,
+				3CA88E792DEAB04C00FBD99C /* ContentView.swift */,
+				3CA88E7B2DEAB05700FBD99C /* Assets.xcassets */,
+				3CA88E7D2DEAB05700FBD99C /* Preview Content */,
+			);
+			path = lookapp;
+			sourceTree = "<group>";
+		};
+		3CA88E7D2DEAB05700FBD99C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3CA88E7E2DEAB05700FBD99C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CA88E872DEAB05700FBD99C /* lookappTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CA88E882DEAB05700FBD99C /* lookappTests.swift */,
+			);
+			path = lookappTests;
+			sourceTree = "<group>";
+		};
+		3CA88E912DEAB05700FBD99C /* lookappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CA88E922DEAB05700FBD99C /* lookappUITests.swift */,
+				3CA88E942DEAB05700FBD99C /* lookappUITestsLaunchTests.swift */,
+			);
+			path = lookappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CA88E732DEAB04C00FBD99C /* lookapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA88E982DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookapp" */;
+			buildPhases = (
+				3CA88E702DEAB04C00FBD99C /* Sources */,
+				3CA88E712DEAB04C00FBD99C /* Frameworks */,
+				3CA88E722DEAB04C00FBD99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lookapp;
+			productName = lookapp;
+			productReference = 3CA88E742DEAB04C00FBD99C /* lookapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CA88E832DEAB05700FBD99C /* lookappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA88E9B2DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookappTests" */;
+			buildPhases = (
+				3CA88E802DEAB05700FBD99C /* Sources */,
+				3CA88E812DEAB05700FBD99C /* Frameworks */,
+				3CA88E822DEAB05700FBD99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA88E862DEAB05700FBD99C /* PBXTargetDependency */,
+			);
+			name = lookappTests;
+			productName = lookappTests;
+			productReference = 3CA88E842DEAB05700FBD99C /* lookappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CA88E8D2DEAB05700FBD99C /* lookappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA88E9E2DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookappUITests" */;
+			buildPhases = (
+				3CA88E8A2DEAB05700FBD99C /* Sources */,
+				3CA88E8B2DEAB05700FBD99C /* Frameworks */,
+				3CA88E8C2DEAB05700FBD99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA88E902DEAB05700FBD99C /* PBXTargetDependency */,
+			);
+			name = lookappUITests;
+			productName = lookappUITests;
+			productReference = 3CA88E8E2DEAB05700FBD99C /* lookappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CA88E6C2DEAB04C00FBD99C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3CA88E732DEAB04C00FBD99C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3CA88E832DEAB05700FBD99C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3CA88E732DEAB04C00FBD99C;
+					};
+					3CA88E8D2DEAB05700FBD99C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3CA88E732DEAB04C00FBD99C;
+					};
+				};
+			};
+			buildConfigurationList = 3CA88E6F2DEAB04C00FBD99C /* Build configuration list for PBXProject "lookapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CA88E6B2DEAB04C00FBD99C;
+			productRefGroup = 3CA88E752DEAB04C00FBD99C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CA88E732DEAB04C00FBD99C /* lookapp */,
+				3CA88E832DEAB05700FBD99C /* lookappTests */,
+				3CA88E8D2DEAB05700FBD99C /* lookappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CA88E722DEAB04C00FBD99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA88E7F2DEAB05700FBD99C /* Preview Assets.xcassets in Resources */,
+				3CA88E7C2DEAB05700FBD99C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E822DEAB05700FBD99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E8C2DEAB05700FBD99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CA88E702DEAB04C00FBD99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */,
+				3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E802DEAB05700FBD99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA88E892DEAB05700FBD99C /* lookappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA88E8A2DEAB05700FBD99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA88E932DEAB05700FBD99C /* lookappUITests.swift in Sources */,
+				3CA88E952DEAB05700FBD99C /* lookappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CA88E862DEAB05700FBD99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CA88E732DEAB04C00FBD99C /* lookapp */;
+			targetProxy = 3CA88E852DEAB05700FBD99C /* PBXContainerItemProxy */;
+		};
+		3CA88E902DEAB05700FBD99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CA88E732DEAB04C00FBD99C /* lookapp */;
+			targetProxy = 3CA88E8F2DEAB05700FBD99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CA88E962DEAB05700FBD99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CA88E972DEAB05700FBD99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CA88E992DEAB05700FBD99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lookapp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CA88E9A2DEAB05700FBD99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lookapp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CA88E9C2DEAB05700FBD99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lookapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lookapp";
+			};
+			name = Debug;
+		};
+		3CA88E9D2DEAB05700FBD99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lookapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lookapp";
+			};
+			name = Release;
+		};
+		3CA88E9F2DEAB05700FBD99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lookapp;
+			};
+			name = Debug;
+		};
+		3CA88EA02DEAB05700FBD99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.edu.unicauca.lookappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lookapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CA88E6F2DEAB04C00FBD99C /* Build configuration list for PBXProject "lookapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA88E962DEAB05700FBD99C /* Debug */,
+				3CA88E972DEAB05700FBD99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA88E982DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA88E992DEAB05700FBD99C /* Debug */,
+				3CA88E9A2DEAB05700FBD99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA88E9B2DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA88E9C2DEAB05700FBD99C /* Debug */,
+				3CA88E9D2DEAB05700FBD99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA88E9E2DEAB05700FBD99C /* Build configuration list for PBXNativeTarget "lookappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA88E9F2DEAB05700FBD99C /* Debug */,
+				3CA88EA02DEAB05700FBD99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CA88E6C2DEAB04C00FBD99C /* Project object */;
+}
