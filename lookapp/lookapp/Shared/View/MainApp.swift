@@ -49,12 +49,12 @@ struct MainApp: View {
             .navigationBarTitle(Text(selectedTab.rawValue), displayMode: .inline)
             .navigationBarItems(
                 leading:
-                    NavigationLink(destination: CreditosView()) {
+                    NavigationLink(destination: DummyScreen(title: "Creditos")) {
                         Image(systemName: "info")
                             .foregroundColor(.blue)
                     },
                 trailing:
-                    NavigationLink(destination: ProfileView()) {
+                    NavigationLink(destination: DummyScreen(title: "Profile")) {
                         Image(systemName: "person")
                             .foregroundColor(.blue)
                     }
