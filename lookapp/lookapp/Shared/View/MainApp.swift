@@ -22,25 +22,25 @@ struct MainApp: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                HomeView()
+                DummyScreen(title: "Principal")
                     .tabItem {
                         Label(Tab.home.rawValue, systemImage: Tab.home.icon)
                     }
                     .tag(Tab.home)
 
-                SearchView()
+                DummyScreen(title: "Buscar")
                     .tabItem {
                         Label(Tab.search.rawValue, systemImage: Tab.search.icon)
                     }
                     .tag(Tab.search)
 
-                SavedView()
+                DummyScreen(title: "Guardados")
                     .tabItem {
                         Label(Tab.saved.rawValue, systemImage: Tab.saved.icon)
                     }
                     .tag(Tab.saved)
 
-                NotificationsView()
+                DummyScreen(title: "Notificaciones")
                     .tabItem {
                         Label(Tab.notifications.rawValue, systemImage: Tab.notifications.icon)
                     }
