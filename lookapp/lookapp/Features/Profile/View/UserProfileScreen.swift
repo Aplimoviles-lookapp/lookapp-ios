@@ -5,7 +5,7 @@ struct UserProfileScreen: View {
     @ObservedObject private var sessionManager = SessionManager.shared
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView{
                 VStack(spacing: 24) {
                     MyAccountSectionView(

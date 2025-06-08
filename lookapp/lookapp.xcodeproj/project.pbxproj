@@ -28,6 +28,8 @@
 		3CBB7A582DF5A3E400F6319F /* UserAccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A572DF5A3E400F6319F /* UserAccountRepository.swift */; };
 		3CBB7A5B2DF5A74700F6319F /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */; };
 		3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */; };
+		3CBB7A5F2DF5D5E700F6319F /* SavedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5E2DF5D5E700F6319F /* SavedRepository.swift */; };
+		3CBB7A612DF5D88E00F6319F /* SavedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A602DF5D88E00F6319F /* SavedScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,14 +70,12 @@
 		3CA88E8E2DEAB05700FBD99C /* lookappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA88E922DEAB05700FBD99C /* lookappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappUITests.swift; sourceTree = "<group>"; };
 		3CA88E942DEAB05700FBD99C /* lookappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3CA88EA92DEAB23900FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3CA88EAB2DEAB28600FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3CA88EAD2DEAB2AF00FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3CA88EAF2DEAB2BC00FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		3CA88EB12DEAB3D400FBD99C /* SavedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemView.swift; sourceTree = "<group>"; };
 		3CBB7A572DF5A3E400F6319F /* UserAccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountRepository.swift; sourceTree = "<group>"; };
 		3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
+		3CBB7A5E2DF5D5E700F6319F /* SavedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRepository.swift; sourceTree = "<group>"; };
+		3CBB7A602DF5D88E00F6319F /* SavedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,8 +233,8 @@
 		3CA88EA42DEAB1BD00FBD99C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3CA88EAD2DEAB2AF00FBD99C /* .gitkeep */,
 				3CA88EB12DEAB3D400FBD99C /* SavedItemView.swift */,
+				3CBB7A602DF5D88E00F6319F /* SavedScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,7 +242,6 @@
 		3CA88EA62DEAB1D900FBD99C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3CA88EAF2DEAB2BC00FBD99C /* .gitkeep */,
 				3C4FD52D2DEAB8B600CFE68B /* SavedItemModel.swift */,
 			);
 			path = Model;
@@ -251,7 +250,6 @@
 		3CA88EA72DEAB1F900FBD99C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				3CA88EAB2DEAB28600FBD99C /* .gitkeep */,
 				3C4FD52B2DEAB87200CFE68B /* SavedViewModel.swift */,
 			);
 			path = ViewModel;
@@ -260,7 +258,7 @@
 		3CA88EA82DEAB20100FBD99C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3CA88EA92DEAB23900FBD99C /* .gitkeep */,
+				3CBB7A5E2DF5D5E700F6319F /* SavedRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -369,6 +367,9 @@
 				Base,
 			);
 			mainGroup = 3CA88E6B2DEAB04C00FBD99C;
+			packageReferences = (
+				3CBB7A622DF5DCBE00F6319F /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 3CA88E752DEAB04C00FBD99C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,10 +417,12 @@
 				3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */,
 				3CBB7A5B2DF5A74700F6319F /* UserProfileViewModel.swift in Sources */,
 				3C47392A2DF250A200159B73 /* MainApp.swift in Sources */,
+				3CBB7A612DF5D88E00F6319F /* SavedScreen.swift in Sources */,
 				3C4FD5312DEAB9E700CFE68B /* UserAccount.swift in Sources */,
 				3C47392C2DF252D300159B73 /* DummyScreen.swift in Sources */,
 				3C4FD5372DEABBA000CFE68B /* AccountsSectionView.swift in Sources */,
 				3C4FD5392DEABC7B00CFE68B /* MyAccountSectionView.swift in Sources */,
+				3CBB7A5F2DF5D5E700F6319F /* SavedRepository.swift in Sources */,
 				3C4FD5352DEABAE900CFE68B /* UserAccountItemList.swift in Sources */,
 				3C4FD52C2DEAB87200CFE68B /* SavedViewModel.swift in Sources */,
 				3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */,
@@ -750,6 +753,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CBB7A622DF5DCBE00F6319F /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 3CA88E6C2DEAB04C00FBD99C /* Project object */;
 }

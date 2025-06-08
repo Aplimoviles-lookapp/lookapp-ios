@@ -51,6 +51,7 @@ struct SavedItemView: View {
                         .frame(width: 16, height: 16)
                         .padding(6)
                         .background(Color(.systemBackground))
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                         .clipShape(Circle())
                 }
                 .padding(6)
@@ -69,10 +70,18 @@ struct SavedItemView: View {
 
 
 #Preview {
-    SavedItemView(
-        title: "Caroy Peluquería",
-        subtitle: "Corte",
-        imageUrl: "https://picsum.photos/64/64",
-        onDelete: {}
-    )
+    VStack {
+        SavedItemView(
+            title: "Caroy Peluquería",
+            subtitle: "Corte",
+            imageUrl: "https://picsum.photos/64/64",
+            onDelete: {}
+        )
+        SavedItemView(
+            title: "Caroy Peluquería",
+            subtitle: "Corte",
+            imageUrl: "https://picsum.photos/64/64",
+            onDelete: {}
+        )
+    }
 }

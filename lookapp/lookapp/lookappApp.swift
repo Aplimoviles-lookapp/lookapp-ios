@@ -11,7 +11,7 @@ import SwiftUI
 struct lookappApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainApp()
         }
     }
 }
