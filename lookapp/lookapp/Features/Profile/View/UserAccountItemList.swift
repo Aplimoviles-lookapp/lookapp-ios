@@ -19,6 +19,7 @@ struct UserAccountItemListView: View {
                     name: account.name,
                     email: account.email,
                     onClick: {
+                        print("Cuenta clickeada")
                         onClickedAccount(account)
                     }
                 )
