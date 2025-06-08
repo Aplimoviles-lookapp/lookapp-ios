@@ -16,6 +16,7 @@
 		3C4FD5352DEABAE900CFE68B /* UserAccountItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FD5342DEABAE900CFE68B /* UserAccountItemList.swift */; };
 		3C4FD5372DEABBA000CFE68B /* AccountsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */; };
 		3C4FD5392DEABC7B00CFE68B /* MyAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FD5382DEABC7B00CFE68B /* MyAccountSectionView.swift */; };
+		3C621A072DF5A02A00C48F08 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C621A062DF5A02A00C48F08 /* SessionManager.swift */; };
 		3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E772DEAB04C00FBD99C /* lookappApp.swift */; };
 		3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E792DEAB04C00FBD99C /* ContentView.swift */; };
 		3CA88E7C2DEAB05700FBD99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA88E7B2DEAB05700FBD99C /* Assets.xcassets */; };
@@ -24,6 +25,9 @@
 		3CA88E932DEAB05700FBD99C /* lookappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E922DEAB05700FBD99C /* lookappUITests.swift */; };
 		3CA88E952DEAB05700FBD99C /* lookappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E942DEAB05700FBD99C /* lookappUITestsLaunchTests.swift */; };
 		3CA88EB22DEAB3D400FBD99C /* SavedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88EB12DEAB3D400FBD99C /* SavedItemView.swift */; };
+		3CBB7A582DF5A3E400F6319F /* UserAccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A572DF5A3E400F6319F /* UserAccountRepository.swift */; };
+		3CBB7A5B2DF5A74700F6319F /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */; };
+		3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,7 @@
 		3C4FD5342DEABAE900CFE68B /* UserAccountItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountItemList.swift; sourceTree = "<group>"; };
 		3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsSectionView.swift; sourceTree = "<group>"; };
 		3C4FD5382DEABC7B00CFE68B /* MyAccountSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountSectionView.swift; sourceTree = "<group>"; };
+		3C621A062DF5A02A00C48F08 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		3CA88E742DEAB04C00FBD99C /* lookapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA88E772DEAB04C00FBD99C /* lookappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappApp.swift; sourceTree = "<group>"; };
 		3CA88E792DEAB04C00FBD99C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		3CA88EAD2DEAB2AF00FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		3CA88EAF2DEAB2BC00FBD99C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		3CA88EB12DEAB3D400FBD99C /* SavedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemView.swift; sourceTree = "<group>"; };
+		3CBB7A572DF5A3E400F6319F /* UserAccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountRepository.swift; sourceTree = "<group>"; };
+		3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		3C4739262DF2504F00159B73 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3C621A052DF5A01700C48F08 /* Utils */,
 				3C4739272DF2505E00159B73 /* View */,
 			);
 			path = Shared;
@@ -120,8 +129,17 @@
 				3C4FD5342DEABAE900CFE68B /* UserAccountItemList.swift */,
 				3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */,
 				3C4FD5382DEABC7B00CFE68B /* MyAccountSectionView.swift */,
+				3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3C621A052DF5A01700C48F08 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3C621A062DF5A02A00C48F08 /* SessionManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3CA88E6B2DEAB04C00FBD99C = {
@@ -205,6 +223,8 @@
 		3CA88EA32DEAB14C00FBD99C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3CBB7A592DF5A73400F6319F /* ViewModel */,
+				3CBB7A562DF5A3C000F6319F /* Repository */,
 				3C4FD52F2DEAB9B700CFE68B /* View */,
 			);
 			path = Profile;
@@ -243,6 +263,22 @@
 				3CA88EA92DEAB23900FBD99C /* .gitkeep */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		3CBB7A562DF5A3C000F6319F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB7A572DF5A3E400F6319F /* UserAccountRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3CBB7A592DF5A73400F6319F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +413,8 @@
 			files = (
 				3CA88EB22DEAB3D400FBD99C /* SavedItemView.swift in Sources */,
 				3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */,
+				3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */,
+				3CBB7A5B2DF5A74700F6319F /* UserProfileViewModel.swift in Sources */,
 				3C47392A2DF250A200159B73 /* MainApp.swift in Sources */,
 				3C4FD5312DEAB9E700CFE68B /* UserAccount.swift in Sources */,
 				3C47392C2DF252D300159B73 /* DummyScreen.swift in Sources */,
@@ -385,8 +423,10 @@
 				3C4FD5352DEABAE900CFE68B /* UserAccountItemList.swift in Sources */,
 				3C4FD52C2DEAB87200CFE68B /* SavedViewModel.swift in Sources */,
 				3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */,
+				3CBB7A582DF5A3E400F6319F /* UserAccountRepository.swift in Sources */,
 				3C4FD52E2DEAB8B600CFE68B /* SavedItemModel.swift in Sources */,
 				3C4FD5332DEABA7C00CFE68B /* UserAccountItem.swift in Sources */,
+				3C621A072DF5A02A00C48F08 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
