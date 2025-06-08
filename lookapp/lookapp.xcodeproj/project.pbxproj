@@ -124,7 +124,6 @@
 		3C4FD52F2DEAB9B700CFE68B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3C4FD5302DEAB9E700CFE68B /* UserAccount.swift */,
 				3C4FD5322DEABA7C00CFE68B /* UserAccountItem.swift */,
 				3C4FD5342DEABAE900CFE68B /* UserAccountItemList.swift */,
 				3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */,
@@ -223,6 +222,7 @@
 		3CA88EA32DEAB14C00FBD99C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3CBB7A632DF5E11300F6319F /* Model */,
 				3CBB7A592DF5A73400F6319F /* ViewModel */,
 				3CBB7A562DF5A3C000F6319F /* Repository */,
 				3C4FD52F2DEAB9B700CFE68B /* View */,
@@ -277,6 +277,14 @@
 				3CBB7A5A2DF5A74700F6319F /* UserProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3CBB7A632DF5E11300F6319F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C4FD5302DEAB9E700CFE68B /* UserAccount.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
