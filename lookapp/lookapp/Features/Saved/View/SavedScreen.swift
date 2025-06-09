@@ -5,8 +5,8 @@ struct SavedScreen: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                List {
+            ScrollView {
+                LazyVStack (spacing: 8){
                     ForEach(viewModel.savedItems, id: \.id) { item in
                         SavedItemView(
                             title: item.title,
@@ -18,7 +18,7 @@ struct SavedScreen: View {
                                 }
                             }
                         )
-                        .listRowInsets(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
+                        .padding(.horizontal,8)
                     }
                 }
                 .listStyle(.plain)
