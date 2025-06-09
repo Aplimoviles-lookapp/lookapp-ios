@@ -2,24 +2,22 @@
 import SwiftUI
 
 struct Form: View {
-    @StateObject private var shiftViewModel = shiftViewModel()
-    @StateObject private var savedViewModel = SavedViewModel()
+    @StateObject private var shiftViewModel = ShiftViewModel()
+    //@StateObject private var savedViewModel = SavedViewModel()
     
     var body: some View {
         VStack(spacing: 0) {
             ScrollView {
                 VStack(spacing: 16) {
-                    // Nombre TextField
                     TextField("Nombre", text: $shiftViewModel.shiftUiState.shiftDetails.nombre)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .onAppear {
-                            // Auto-fill nombre if empty and userName is available
+                        /*.onAppear {
                             if shiftViewModel.shiftUiState.shiftDetails.nombre.isEmpty && !savedViewModel.userName.isEmpty {
                                 shiftViewModel.updateNombre(savedViewModel.userName)
                             }
-                        }
+                        }*/
                     
-                    // Dropdown de Negocios
+                  
                     DropDownMenu(
                         label: "Nombre del Negocio",
                         options: shiftViewModel.sitios.map { $0.name },
@@ -27,7 +25,7 @@ struct Form: View {
                         onOptionSelected: { shiftViewModel.onSelectNegocio($0) }
                     )
                     
-                    // Dropdown de Servicios (solo si hay negocio seleccionado)
+                
                     if !shiftViewModel.shiftUiState.shiftDetails.negocio.isEmpty {
                         DropDownMenu(
                             label: "Servicio",
@@ -37,13 +35,12 @@ struct Form: View {
                         )
                     }
                     
-                    // Date Picker
+                
                     DatePickerField(
                         selectedDate: $shiftViewModel.shiftUiState.shiftDetails.fecha,
                         label: "Fecha"
                     )
                     
-                    // Dropdown de Horarios
                     DropDownMenu(
                         label: "Horario",
                         options: ["9:00-10:00", "10:00-11:00", "11:00-1:00"],
@@ -51,7 +48,6 @@ struct Form: View {
                         onOptionSelected: { shiftViewModel.updateHorario($0) }
                     )
                     
-                    // Botones
                     HStack {
                         Spacer()
                         
