@@ -30,6 +30,16 @@
 		3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */; };
 		3CBB7A5F2DF5D5E700F6319F /* SavedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A5E2DF5D5E700F6319F /* SavedRepository.swift */; };
 		3CBB7A612DF5D88E00F6319F /* SavedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB7A602DF5D88E00F6319F /* SavedScreen.swift */; };
+		880B9CD12DF734F000807E30 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CD02DF734F000807E30 /* Form.swift */; };
+		880B9CD32DF7352900807E30 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CD22DF7352900807E30 /* HomeScreen.swift */; };
+		880B9CD52DF7355500807E30 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CD42DF7355500807E30 /* NavigationBar.swift */; };
+		880B9CD72DF738D600807E30 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CD62DF738D600807E30 /* ServiceModel.swift */; };
+		880B9CD92DF738EF00807E30 /* ShiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CD82DF738EF00807E30 /* ShiftModel.swift */; };
+		880B9CDB2DF7391900807E30 /* SiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CDA2DF7391900807E30 /* SiteModel.swift */; };
+		880B9CDD2DF7399300807E30 /* ShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CDC2DF7399300807E30 /* ShiftViewModel.swift */; };
+		880B9CDF2DF739CC00807E30 /* ShiftRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B9CDE2DF739CC00807E30 /* ShiftRepository.swift */; };
+		88EEC2FF2DF74618001046D6 /* SiteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEC2FE2DF74618001046D6 /* SiteRepository.swift */; };
+		88EEC3012DF7463A001046D6 /* ServiceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEC3002DF7463A001046D6 /* ServiceRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +86,16 @@
 		3CBB7A5C2DF5A7EA00F6319F /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
 		3CBB7A5E2DF5D5E700F6319F /* SavedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRepository.swift; sourceTree = "<group>"; };
 		3CBB7A602DF5D88E00F6319F /* SavedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedScreen.swift; sourceTree = "<group>"; };
+		880B9CD02DF734F000807E30 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		880B9CD22DF7352900807E30 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		880B9CD42DF7355500807E30 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		880B9CD62DF738D600807E30 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		880B9CD82DF738EF00807E30 /* ShiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftModel.swift; sourceTree = "<group>"; };
+		880B9CDA2DF7391900807E30 /* SiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteModel.swift; sourceTree = "<group>"; };
+		880B9CDC2DF7399300807E30 /* ShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewModel.swift; sourceTree = "<group>"; };
+		880B9CDE2DF739CC00807E30 /* ShiftRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftRepository.swift; sourceTree = "<group>"; };
+		88EEC2FE2DF74618001046D6 /* SiteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRepository.swift; sourceTree = "<group>"; };
+		88EEC3002DF7463A001046D6 /* ServiceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +222,7 @@
 		3CA88EA12DEAB13C00FBD99C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				880B9CC92DF7332F00807E30 /* Home */,
 				3CA88EA22DEAB14500FBD99C /* Saved */,
 				3CA88EA32DEAB14C00FBD99C /* Profile */,
 			);
@@ -285,6 +306,55 @@
 				3C4FD5302DEAB9E700CFE68B /* UserAccount.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		880B9CC92DF7332F00807E30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				880B9CCD2DF7338800807E30 /* Repository */,
+				880B9CCC2DF7337700807E30 /* ViewModel */,
+				880B9CCB2DF7336C00807E30 /* View */,
+				880B9CCA2DF7335200807E30 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		880B9CCA2DF7335200807E30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				880B9CD62DF738D600807E30 /* ServiceModel.swift */,
+				880B9CD82DF738EF00807E30 /* ShiftModel.swift */,
+				880B9CDA2DF7391900807E30 /* SiteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		880B9CCB2DF7336C00807E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				880B9CD02DF734F000807E30 /* Form.swift */,
+				880B9CD22DF7352900807E30 /* HomeScreen.swift */,
+				880B9CD42DF7355500807E30 /* NavigationBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		880B9CCC2DF7337700807E30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				880B9CDC2DF7399300807E30 /* ShiftViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		880B9CCD2DF7338800807E30 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				880B9CDE2DF739CC00807E30 /* ShiftRepository.swift */,
+				88EEC2FE2DF74618001046D6 /* SiteRepository.swift */,
+				88EEC3002DF7463A001046D6 /* ServiceRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,18 +494,28 @@
 				3CA88EB22DEAB3D400FBD99C /* SavedItemView.swift in Sources */,
 				3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */,
 				3CBB7A5D2DF5A7EA00F6319F /* UserProfileScreen.swift in Sources */,
+				880B9CD92DF738EF00807E30 /* ShiftModel.swift in Sources */,
 				3CBB7A5B2DF5A74700F6319F /* UserProfileViewModel.swift in Sources */,
+				880B9CD12DF734F000807E30 /* Form.swift in Sources */,
+				88EEC2FF2DF74618001046D6 /* SiteRepository.swift in Sources */,
+				88EEC3012DF7463A001046D6 /* ServiceRepository.swift in Sources */,
+				880B9CD72DF738D600807E30 /* ServiceModel.swift in Sources */,
 				3C47392A2DF250A200159B73 /* MainApp.swift in Sources */,
+				880B9CDB2DF7391900807E30 /* SiteModel.swift in Sources */,
 				3CBB7A612DF5D88E00F6319F /* SavedScreen.swift in Sources */,
 				3C4FD5312DEAB9E700CFE68B /* UserAccount.swift in Sources */,
 				3C47392C2DF252D300159B73 /* DummyScreen.swift in Sources */,
 				3C4FD5372DEABBA000CFE68B /* AccountsSectionView.swift in Sources */,
 				3C4FD5392DEABC7B00CFE68B /* MyAccountSectionView.swift in Sources */,
+				880B9CD52DF7355500807E30 /* NavigationBar.swift in Sources */,
+				880B9CDD2DF7399300807E30 /* ShiftViewModel.swift in Sources */,
 				3CBB7A5F2DF5D5E700F6319F /* SavedRepository.swift in Sources */,
 				3C4FD5352DEABAE900CFE68B /* UserAccountItemList.swift in Sources */,
 				3C4FD52C2DEAB87200CFE68B /* SavedViewModel.swift in Sources */,
 				3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */,
 				3CBB7A582DF5A3E400F6319F /* UserAccountRepository.swift in Sources */,
+				880B9CD32DF7352900807E30 /* HomeScreen.swift in Sources */,
+				880B9CDF2DF739CC00807E30 /* ShiftRepository.swift in Sources */,
 				3C4FD52E2DEAB8B600CFE68B /* SavedItemModel.swift in Sources */,
 				3C4FD5332DEABA7C00CFE68B /* UserAccountItem.swift in Sources */,
 				3C621A072DF5A02A00C48F08 /* SessionManager.swift in Sources */,
