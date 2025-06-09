@@ -377,6 +377,7 @@
 			mainGroup = 3CA88E6B2DEAB04C00FBD99C;
 			packageReferences = (
 				3CBB7A622DF5DCBE00F6319F /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				3CF746A12DF6FF9A0082F6E2 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 3CA88E752DEAB04C00FBD99C /* Products */;
 			projectDirPath = "";
@@ -769,6 +770,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.1.1;
+			};
+		};
+		3CF746A12DF6FF9A0082F6E2 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

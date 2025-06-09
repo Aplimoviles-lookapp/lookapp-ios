@@ -1,6 +1,15 @@
 {
-  "originHash" : "d84e3856bb7f70982a9430d07414ec741af47418ccacd0c9f550e7d2b8eedd2d",
+  "originHash" : "6e8e855023498989b5cea9f5bf7014a668ec922efc1bb45546f0e6dbbdcd133b",
   "pins" : [
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
+        "version" : "2.5.3"
+      }
+    },
     {
       "identity" : "swiftui-cached-async-image",
       "kind" : "remoteSourceControl",
