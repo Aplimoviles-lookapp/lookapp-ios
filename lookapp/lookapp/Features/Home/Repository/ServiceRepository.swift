@@ -1,10 +1,3 @@
-//
-//  ServiceRepository.swift
-//  lookapp
-//
-//  Created by Telematica on 9/06/25.
-//
-
 import Foundation
 import Combine
 
@@ -18,53 +11,21 @@ class ServiceRepository: ObservableObject {
         initializeData()
     }
     
-    // MARK: - Initialization
-    
     private func initializeData() {
         guard services.isEmpty else { return }
         
         let initialServices = [
-            ServiceModel(
-                id: "service_1",
-                name: "Corte de Pelo",
-                description: "Corte de pelo profesional"
-            ),
-            ServiceModel(
-                id: "service_2",
-                name: "Peinados",
-                description: "Peinados y alizados"
-            ),
-            ServiceModel(
-                id: "service_3",
-                name: "Keratina",
-                description: "Tratamiento de keratina"
-            ),
-            ServiceModel(
-                id: "service_4",
-                name: "Manicure",
-                description: "Diseño de uñas de múltiples colores"
-            ),
-            ServiceModel(
-                id: "service_5",
-                name: "Pedicure",
-                description: "Cuidado completo de pies"
-            ),
-            ServiceModel(
-                id: "service_6",
-                name: "Mascarillas",
-                description: "Mascarillas de todo tipo"
-            ),
-            ServiceModel(
-                id: "service_7",
-                name: "Diseño de Cejas",
-                description: "Cejas hermosas"
-            )
+            ServiceModel(id: "service_1",name: "Corte de Pelo",description: "Corte de pelo profesional"),
+            ServiceModel(id: "service_2",name: "Peinados",description: "Peinados y alizados"),
+            ServiceModel(id: "service_3",name: "Keratina",description: "Tratamiento de keratina"),
+            ServiceModel(id: "service_4",name: "Manicure",description: "Diseño de uñas de múltiples colores"),
+            ServiceModel(id: "service_5",name: "Pedicure",description: "Cuidado completo de pies"),
+            ServiceModel(id: "service_6",name: "Mascarillas",description: "Mascarillas de todo tipo"),
+            ServiceModel(id: "service_7",name: "Diseño de Cejas",description: "Cejas hermosas")
         ]
         
         services = initialServices
     }
-    
-    // MARK: - Public Methods
     
     func getAll() -> AnyPublisher<[ServiceModel], Never> {
         $services.eraseToAnyPublisher()

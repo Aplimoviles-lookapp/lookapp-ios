@@ -4,28 +4,24 @@ import SwiftUI
 
 @MainActor
 class ShiftViewModel: ObservableObject {
-    // MARK: - Published Properties
     @Published var shiftUiState = ShiftUiState()
     @Published var sitios: [SiteModel] = []
     @Published var servicios: [String] = []
     @Published var showConfirmationDialog = false
     
-    // MARK: - Dependencies
     private let shiftRepository = ShiftRepository.shared
     private let siteRepository = SiteRepository.shared
     private let serviceRepository = ServiceRepository.shared
     
     private var cancellables = Set<AnyCancellable>()
     
-    // MARK: - Initialization
+    
     init() {
         setupSubscriptions()
         getSitios()
     }
     
-    // MARK: - Setup
     private func setupSubscriptions() {
-        // Observar cambios en sitios
         siteRepository.getAll()
             .receive(on: RunLoop.main)
             .sink { [weak self] sites in
@@ -34,17 +30,15 @@ class ShiftViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    // MARK: - Public Methods
+   
     
     func getSitios() {
-        // Los sitios se actualizan automáticamente a través del subscription
+        
     }
     
     func onSelectNegocio(_ nombreNegocio: String) {
         shiftUiState.shiftDetails.negocio = nombreNegocio
-        shiftUiState.shiftDetails.servicio = "" // Reset servicio
-        
-        // Obtener servicios para el negocio seleccionado
+        shiftUiState.shiftDetails.servicio = ""
         servicios = siteRepository.getServicesForSiteName(nombreNegocio)
     }
     
@@ -92,9 +86,6 @@ class ShiftViewModel: ObservableObject {
         showConfirmationDialog = false
     }
 }
-
-// MARK: - Data Models
-
 struct ShiftUiState {
     var shiftDetails = ShiftDetails()
     var isEntryValid: Bool {
@@ -114,7 +105,7 @@ struct ShiftDetails {
     var horario: String = ""
 }
 
-// MARK: - Extensions
+//
 
 extension ShiftDetails {
     func toShiftModel() -> ShiftModel {
@@ -122,7 +113,7 @@ extension ShiftDetails {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
         return ShiftModel(
-            id: "", // Se generará en el repository
+            id: "", 
             nameAndLastName: nombre,
             businessName: negocio,
             serviceName: servicio,

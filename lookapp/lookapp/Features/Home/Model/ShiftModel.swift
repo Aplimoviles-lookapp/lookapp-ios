@@ -1,6 +1,6 @@
 import Foundation
 
-// MARK: - ShiftModel
+
 struct ShiftModel: Identifiable, Codable {
     var id: String
     let nameAndLastName: String
@@ -25,12 +25,6 @@ struct ShiftModel: Identifiable, Codable {
         self.time = time
     }
 }
-
-
-
-
-
-// MARK: - Extensions for SwiftUI
 extension ShiftModel: Equatable {
     static func == (lhs: ShiftModel, rhs: ShiftModel) -> Bool {
         lhs.id == rhs.id

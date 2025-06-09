@@ -57,7 +57,6 @@ struct TabBar: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // Tab Headers
             HStack(spacing: 0) {
                 ForEach(0..<tabs.count, id: \.self) { index in
                     Button {
@@ -68,7 +67,6 @@ struct TabBar: View {
                                 .font(.system(size: 16, weight: selectedTabIndex == index ? .bold : .regular))
                                 .foregroundColor(selectedTabIndex == index ? .accentColor : Color(.systemGray))
                             
-                            // Indicator
                             Rectangle()
                                 .fill(selectedTabIndex == index ? Color.accentColor : Color.clear)
                                 .frame(height: 3)
@@ -81,13 +79,11 @@ struct TabBar: View {
             }
             .background(Color(.systemBackground))
             
-            // Divider line
             Divider()
         }
     }
 }
 
-// Extension para corner radius selectivo
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape(RoundedCorner(radius: radius, corners: corners))

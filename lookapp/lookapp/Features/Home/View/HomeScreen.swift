@@ -21,8 +21,8 @@ struct HomeScreenWithNavigation: View {
             .navigationBarTitleDisplayMode(.inline)
         }
         .safeAreaInset(edge: .bottom) {
-            // Aquí irías tu BottomNavBar cuando la tengas implementada
-            // BottomNavBar()
+            
+             BottomNavBar()
         }
     }
 }
