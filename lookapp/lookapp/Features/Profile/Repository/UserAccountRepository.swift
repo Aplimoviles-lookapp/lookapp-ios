@@ -35,8 +35,15 @@ class UserAccountRepository: ObservableObject {
         ]
         
         let initialUsers = [
-            UserAccount(id: 1, name: "Alice Smith", email: "alice@example.com", savedItems: initialItems1),
-            UserAccount(id: 2, name: "Bob Jones", email: "bob@example.com", savedItems: initialItems2)
+            UserAccount(id: 1, name: "Alice Smith", email: "alice@example.com", savedItems: initialItems1, notifications: [
+                AppNotification(title: "Bienvenido a LookApp", message: "Gracias por instalar la aplicación.", date: Date()),
+                AppNotification(title: "Tips de belleza", message: "Conoce los últimos trends en cortes de cabello para esta temporada.", date: Date()),
+                AppNotification(title: "¿Sabías esto?", message: "Puedes guardar tus peluquerías favoritas.", date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!)
+            ]),
+            UserAccount(id: 2, name: "Bob Jones", email: "bob@example.com", savedItems: initialItems2, notifications: [
+                AppNotification(title: "Bienvenido a LookApp", message: "Gracias por instalar la aplicación.", date: Date()),
+                AppNotification(title: "¿Sabías esto?", message: "Puedes guardar tus peluquerías favoritas.", date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!)
+            ])
         ]
         
         userAccounts = initialUsers
