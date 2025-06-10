@@ -3,7 +3,7 @@ import SwiftUI
 
 struct Form: View {
     @StateObject private var shiftViewModel = ShiftViewModel()
-    //@StateObject private var savedViewModel = SavedViewModel()
+    @StateObject private var sesionManager=SessionManager.shared
     
     var body: some View {
         VStack(spacing: 0) {
@@ -11,11 +11,11 @@ struct Form: View {
                 VStack(spacing: 16) {
                     TextField("Nombre", text: $shiftViewModel.shiftUiState.shiftDetails.nombre)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        /*.onAppear {
-                            if shiftViewModel.shiftUiState.shiftDetails.nombre.isEmpty && !savedViewModel.userName.isEmpty {
-                                shiftViewModel.updateNombre(savedViewModel.userName)
-                            }
-                        }*/
+                        .onAppear {
+                                                    if shiftViewModel.shiftUiState.shiftDetails.nombre.isEmpty || !shiftViewModel.shiftUiState.shiftDetails.nombre.isEmpty {
+                                                        shiftViewModel.updateNombre(SessionManager.shared.userName)
+                                                    }
+                                                }
                     
                   
                     DropDownMenu(

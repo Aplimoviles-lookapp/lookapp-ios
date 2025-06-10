@@ -11,6 +11,10 @@ import Combine
 class SessionManager: ObservableObject {
     static let shared = SessionManager()
     @Published private(set) var currentUserAccount: UserAccount?
+    
+    var userName: String {
+        currentUserAccount?.name ?? ""
+      }
     private init() {}
     func updateUserAccount(_ newUserAccount: UserAccount?) {
         currentUserAccount = newUserAccount
