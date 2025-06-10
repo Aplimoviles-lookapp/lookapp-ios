@@ -49,7 +49,7 @@ struct MainApp: View {
             .navigationBarTitle(Text(selectedTab.rawValue), displayMode: .inline)
             .navigationBarItems(
                 leading:
-                    NavigationLink(destination: DummyScreen(title: "Creditos")) {
+                    NavigationLink(destination: Credits()) {
                         Image(systemName: "info")
                             .foregroundColor(.blue)
                     },

@@ -17,6 +17,8 @@
 		3C4FD5372DEABBA000CFE68B /* AccountsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */; };
 		3C4FD5392DEABC7B00CFE68B /* MyAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FD5382DEABC7B00CFE68B /* MyAccountSectionView.swift */; };
 		3C621A072DF5A02A00C48F08 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C621A062DF5A02A00C48F08 /* SessionManager.swift */; };
+		3C7F9FF22DF89A5500766436 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9FF12DF89A5500766436 /* Credits.swift */; };
+		3C7F9FF42DF89B1A00766436 /* CreditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F9FF32DF89B1A00766436 /* CreditItemView.swift */; };
 		3CA88E782DEAB04C00FBD99C /* lookappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E772DEAB04C00FBD99C /* lookappApp.swift */; };
 		3CA88E7A2DEAB04C00FBD99C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88E792DEAB04C00FBD99C /* ContentView.swift */; };
 		3CA88E7C2DEAB05700FBD99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA88E7B2DEAB05700FBD99C /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		3C4FD5362DEABBA000CFE68B /* AccountsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsSectionView.swift; sourceTree = "<group>"; };
 		3C4FD5382DEABC7B00CFE68B /* MyAccountSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountSectionView.swift; sourceTree = "<group>"; };
 		3C621A062DF5A02A00C48F08 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		3C7F9FF12DF89A5500766436 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		3C7F9FF32DF89B1A00766436 /* CreditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditItemView.swift; sourceTree = "<group>"; };
 		3CA88E742DEAB04C00FBD99C /* lookapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA88E772DEAB04C00FBD99C /* lookappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookappApp.swift; sourceTree = "<group>"; };
 		3CA88E792DEAB04C00FBD99C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			children = (
 				3C4739292DF250A200159B73 /* MainApp.swift */,
 				3C47392B2DF252D300159B73 /* DummyScreen.swift */,
+				3C7F9FF12DF89A5500766436 /* Credits.swift */,
+				3C7F9FF32DF89B1A00766436 /* CreditItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,10 +505,12 @@
 				880B9CD12DF734F000807E30 /* Form.swift in Sources */,
 				88EEC2FF2DF74618001046D6 /* SiteRepository.swift in Sources */,
 				88EEC3012DF7463A001046D6 /* ServiceRepository.swift in Sources */,
+				3C7F9FF42DF89B1A00766436 /* CreditItemView.swift in Sources */,
 				880B9CD72DF738D600807E30 /* ServiceModel.swift in Sources */,
 				3C47392A2DF250A200159B73 /* MainApp.swift in Sources */,
 				880B9CDB2DF7391900807E30 /* SiteModel.swift in Sources */,
 				3CBB7A612DF5D88E00F6319F /* SavedScreen.swift in Sources */,
+				3C7F9FF22DF89A5500766436 /* Credits.swift in Sources */,
 				3C4FD5312DEAB9E700CFE68B /* UserAccount.swift in Sources */,
 				3C47392C2DF252D300159B73 /* DummyScreen.swift in Sources */,
 				3C4FD5372DEABBA000CFE68B /* AccountsSectionView.swift in Sources */,
