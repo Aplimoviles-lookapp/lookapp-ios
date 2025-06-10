@@ -28,7 +28,7 @@ struct MainApp: View {
                     }
                     .tag(Tab.home)
                 
-                DummyScreen(title: "Buscar")
+                SearchView()
                     .tabItem {
                         Label(Tab.search.rawValue, systemImage: Tab.search.icon)
                     }
@@ -40,7 +40,7 @@ struct MainApp: View {
                     }
                     .tag(Tab.saved)
                 
-                DummyScreen(title: "Notificaciones")
+                NotificationView()
                     .tabItem {
                         Label(Tab.notifications.rawValue, systemImage: Tab.notifications.icon)
                     }

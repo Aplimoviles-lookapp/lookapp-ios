@@ -13,11 +13,15 @@ struct UserAccount: Identifiable {
     let name: String
     let email: String
     let savedItems: [SavedItemModel]
+    let notifications: [AppNotification]  
     
-    init(id: Int64 = 0, name: String, email: String, savedItems: [SavedItemModel] = []) {
+    init(id: Int64 = 0, name: String, email: String, savedItems: [SavedItemModel] = [], notifications: [AppNotification] = []) {
         self.id = id
         self.name = name
         self.email = email
         self.savedItems = savedItems
+        self.notifications = notifications
     }
 }
+
+

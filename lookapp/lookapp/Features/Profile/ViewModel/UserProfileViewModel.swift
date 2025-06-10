@@ -18,10 +18,10 @@ class UserProfileViewModel: ObservableObject {
     
     // Predefined list of random user accounts (without savedItems)
     private let randomAccounts = [
-        UserAccount(name: "John Doe", email: "john.doe@example.com", savedItems: []),
-        UserAccount(name: "Jane Smith", email: "jane.smith@example.com", savedItems: []),
-        UserAccount(name: "Alice Johnson", email: "alice.johnson@example.com", savedItems: []),
-        UserAccount(name: "Bob Brown", email: "bob.brown@example.com", savedItems: [])
+        UserAccount(name: "John Doe", email: "john.doe@example.com", savedItems: [], notifications: []),
+        UserAccount(name: "Jane Smith", email: "jane.smith@example.com", savedItems: [], notifications: []),
+        UserAccount(name: "Alice Johnson", email: "alice.johnson@example.com", savedItems: [], notifications: []),
+        UserAccount(name: "Bob Brown", email: "bob.brown@example.com", savedItems: [], notifications: [])
     ]
     
     var currentUser: UserAccount? {
