@@ -22,7 +22,7 @@ struct MainApp: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                HomeScreen(title: "Principal")
+                HomeScreen()
                     .tabItem {
                         Label(Tab.home.rawValue, systemImage: Tab.home.icon)
                     }

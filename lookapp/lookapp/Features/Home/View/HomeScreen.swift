@@ -17,13 +17,13 @@ struct HomeScreenWithNavigation: View {
             VStack {
                 HomeScreen()
             }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
+            //.navigationTitle("Home")
+            //.navigationBarTitleDisplayMode(.inline)
         }
-        .safeAreaInset(edge: .bottom) {
+        //.safeAreaInset(edge: .bottom) {
             
-             BottomNavBar()
-        }
+            // BottomNavBar()
+        //}
     }
 }
 
